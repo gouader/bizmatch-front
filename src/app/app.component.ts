@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'miniprojet';
+  constructor(private router: Router) {}
+  isAccueilAdminPage() {
+    return this.router.url === '/accueilAdmin';
+  }
+  isListeUtilisateurPage() {
+    return this.router.url === '/listeUtilisateur';
+  }
+ 
 }
