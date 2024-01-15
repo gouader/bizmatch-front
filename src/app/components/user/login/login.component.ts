@@ -44,7 +44,7 @@ export class LoginComponent {
         this.authService.storeToken(jwtToken);
 
         // Redirigez l'utilisateur vers la page d'accueil après une authentification réussie.
-         this.router.navigate(['/serviceBiz']); 
+         this.router.navigate(['/listeUtilisateur']); 
         },
         (error) => {
             if (error.status === 401) {

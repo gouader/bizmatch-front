@@ -50,8 +50,28 @@ export class UserServiceService {
     return this.http.post(`${this.apiUrl}/reset-password?token=${token}&newPassword=${newPassword}`, requestBody);
   }
 
-  
+  getAllUsers(): Observable<User[]> {
+    return this.http.get<User[]>(`${this.apiUrl}/all`);
 }
 
+removeUser(id: number): Observable<any> {
+  const url = `${this.apiUrl}/sup/${id}`;
+  return this.http.delete(url);
+}
+updateUser(id: any, user: User): Observable<User> {
+  const url = `${this.apiUrl}/modifier/${id}`;
+  return this.http.put<User>(url, user);
+}
+blockUser(id: any): Observable<any> {
+  const url = `${this.apiUrl}/${id}/block`;
+  return this.http.post(url, null); // Peut être un POST ou autre, selon votre implémentation
+}
+// UserServiceService.ts
+unblockUser(id: any): Observable<any> {
+  const url = `${this.apiUrl}/${id}/unblock`;
+  return this.http.post(url, null);
+}
+
+}
 
 

@@ -17,6 +17,8 @@ import { ServiceBizComponent } from './components/user/service-biz/service-biz.c
 import { AccueilComponent } from './components/admin/accueil/accueil.component';
 import { ResetPasswordFinalStepComponent } from './components/user/reset-password-final-step/reset-password-final-step.component';
 import { ListeUtilisateurComponent } from './components/admin/liste-utilisateur/liste-utilisateur.component';
+import { BlogComponent } from './components/user/blog/blog.component';
+import { DetailBlogComponent } from './components/user/detail-blog/detail-blog.component';
 
 
 @NgModule({
@@ -34,6 +36,8 @@ import { ListeUtilisateurComponent } from './components/admin/liste-utilisateur/
     AccueilComponent,
     ResetPasswordFinalStepComponent,
     ListeUtilisateurComponent,
+    BlogComponent,
+    DetailBlogComponent,
   ],
   imports: [
     BrowserModule,

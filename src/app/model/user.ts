@@ -1,11 +1,12 @@
 // user.model.ts
 export interface User {
-    //id:number;
+    id?: any;
     username?: string;
   
     email?: string;
     password?: string;
     confirmpassword?: string;
     token?: string;
+    blocked?:boolean;
   }
   

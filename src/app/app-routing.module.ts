@@ -8,6 +8,8 @@ import { ServiceBizComponent } from './components/user/service-biz/service-biz.c
 import { AccueilComponent } from './components/admin/accueil/accueil.component';
 import { ResetPasswordFinalStepComponent } from './components/user/reset-password-final-step/reset-password-final-step.component';
 import { ListeUtilisateurComponent } from './components/admin/liste-utilisateur/liste-utilisateur.component';
+import { BlogComponent } from './components/user/blog/blog.component';
+import { DetailBlogComponent } from './components/user/detail-blog/detail-blog.component';
 
 
 const routes: Routes = [
@@ -19,6 +21,8 @@ const routes: Routes = [
   { path: 'serviceBiz', component: ServiceBizComponent }, 
   { path: 'accueilAdmin', component: AccueilComponent }, 
   { path: 'resetPassword', component: ResetPasswordFinalStepComponent }, 
+  { path: 'blog', component: BlogComponent }, 
+  { path: 'detailBlog', component: DetailBlogComponent }, 
 
  
   { path: 'accueil', component: HomeComponent }, // Remplacez 'AccueilComponent' par le nom de votre composant d'accueil
